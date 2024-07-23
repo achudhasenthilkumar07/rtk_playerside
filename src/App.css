@@ -1,0 +1,373 @@
+.header-img {
+  background-image: url(./assets/images/headerImage.jpg) !important;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  justify-content: center;
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+.row>* {
+  display: flex;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.card-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.logInBt {
+  font-weight: bold;
+}
+
+.mt-extra {
+  margin-top: 6rem;
+  /* Example: 96px */
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+}
+
+.title-lg {
+  font-size: 2rem;
+  /* Adjust as needed for larger screens */
+}
+
+.title-md {
+  font-size: 1.5rem;
+  /* Adjust as needed for medium screens */
+}
+
+.title-sm {
+  font-size: 1.2rem;
+  /* Adjust as needed for smaller screens */
+}
+
+.line {
+  border: 20px;
+  color: white;
+}
+
+.app {
+  font-family:"Roboto", "Helvetica", "Arial", sans-serif;
+  overflow: hidden;
+}
+
+.options-title {
+  color: white;
+  font-weight: lighter;
+  font-size: medium;
+}
+
+.search-inputs {
+  justify-content: center;
+}
+
+.search-button {
+  padding-right: 25px !important;
+  padding-left: 25px !important;
+  padding-top: 8.5px !important;
+  padding-bottom: 8.5px !important;
+  color: white;
+  border: none;
+  background-color: #dc3545;
+  border-radius: 2px;
+  font-weight: bold;
+  transition: opacity 0.50s,
+    box-shadow 1s
+}
+
+.search-button:hover {
+  opacity: 0.8;
+  background-color: #dc3545;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.15);
+}
+
+
+.bi.bi-search {
+  color: white;
+  margin-right: 5px;
+}
+
+.options-title button {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.options-title button:hover {
+  text-decoration: underline 3px #dc3545;
+}
+
+
+.imgLogo {
+  width: 240px
+}
+
+.search-input {
+  padding-top: 5.5px !important;
+  padding-bottom: 5.5px !important;
+  font-size: large;
+  padding-left: 40px;
+  width: 200px;
+  padding-right: 40px;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+  /* Adjust as needed */
+}
+
+.iconImage {
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  left: 10px;
+  /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  /* Ensures the input is still clickable */
+}
+
+.sport-drop-down {
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-top: 10.5px !important;
+  padding-bottom: 10.5px !important;
+}
+
+#datepicker {
+  padding-left: 40px;
+  padding-right: 10px;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+
+#timepicker {
+  padding-left: 40px;
+  padding-right: 10px;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+
+.pass {
+  margin-top: 12px !important;
+  margin-bottom: 10px !important;
+}
+
+.bi.bi-eye {
+  margin-top: 7px !important;
+  position: absolute;
+  right: 10px;
+  color: black;
+}
+
+.bi.bi-eye-slash {
+  margin-top: 7px !important;
+  position: absolute;
+  right: 10px;
+  color: black;
+}
+
+.forget-pass {
+  color: #dc3545;
+  margin-left: 150px !important;
+  margin-top: 50px !important;
+}
+
+.signIn {
+  margin-top: 5px;
+  padding-left: 20px; /* Adjust padding as needed */
+  padding-right: 20px; /* Adjust padding as needed */
+  width: 317px; /* Fixed width for the button */
+  position: relative; /* Ensure spinner is positioned relative to the button */
+}
+
+.signIn.spinner-border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.or {
+  opacity: 0.7;
+  border-radius: 14px;
+  background-color: rgb(227, 227, 227);
+  border: none;
+  margin-left: 140px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.SignInW {
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: 8px;
+  margin-bottom: 0px;
+}
+
+.bi.bi-facebook{
+  color: #3b5998;
+}
+
+.bi.bi-google{
+  color: #4285F4#34A853#FBBC05#EA4335;
+}
+
+.line-black {
+  margin-top: -18px;
+  margin-bottom: 0px;
+  color: rgb(177, 177, 177);
+}
+
+.haveAccSportCen {
+  font-size: small;
+  margin-right: 23px;
+  margin-top: 5px;
+}
+
+.createAccPartWthUs {
+  margin-top: 5px;
+  margin-right: 67px;
+  font-size: small;
+  color: #dc3545
+}
+
+.backdrop-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  z-index: 1050;
+}
+
+.backdrop {
+  position: absolute;
+  top: 125px;
+  right: 200px;
+}
+
+.bi.bi-x {
+  margin-left: 310px !important;
+  margin-top: 0px!important;
+  color: #dc3545
+}
+
+
+.footer-img {
+  background-image: url(./assets/images/bodyImage.jpg) !important;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  justify-content: center;
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+.info-div{
+  background-color: #fab4b4;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 250px !important;
+  margin-left: 250px !important;
+  transition: opacity 0.50s,
+    box-shadow 1s
+}
+
+.info-div:hover{
+  opacity: 0.9;
+  background-color: #ff8484;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.15);
+}
+
+.info-p{
+  margin-top: 10px;
+  margin-bottom: 13px;
+  margin-left: 10px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: large;
+  color: #b12223;
+}
+
+
+.bi.bi-info-circle{
+  margin-left: 250px;
+  color: #b12223;
+}
+
+.games-display{
+  color: black;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.bal-display{
+  color: black;
+  text-align: center;
+  font-size: large;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+.black-footer {
+  background-color: rgb(0, 0, 0, 0.87);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.playzeon {
+  margin-bottom: 1rem;
+}
+
+.links {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.links p {
+  margin: 0 0.5rem;
+}
+
+.social-icons {
+  margin-bottom: 1rem;
+}
+
+.line-separator {
+  margin-bottom: 1rem;
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+}
