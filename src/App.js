@@ -42,17 +42,19 @@ function App() {
       console.log('No data in sportsList');
       return;
     }
-    sports?.map(async (sprtandcnt) => {
-      console.log('token', token)
-      const { data } = await getFacility(sprtandcnt?.id);
-      console.log("count", data)
-      const facJSON = {
-        title: sprtandcnt.title,
-        count: data,
-        url: sprtandcnt.url
-      };
-      setFacilityAndCount(fc => [...fc, facJSON])
-    });
+    if (facilityAndCount.length === 0) {
+      sports?.map(async (sprtandcnt) => {
+        console.log('token', token)
+        const { data } = await getFacility(sprtandcnt?.id);
+        console.log("count", data)
+        const facJSON = {
+          title: sprtandcnt.title,
+          count: data,
+          url: sprtandcnt.url
+        };
+        setFacilityAndCount(fc => [...fc, facJSON])
+      });
+    }
   };
 
 
@@ -246,8 +248,10 @@ function App() {
                       </div>)
                     })
                     }
+                    <div className="col ms-3 pb-3">
+                    </div>
                   </div>
-                  : <div className='info-div d-flex'><i class="bi bi-info-circle fs-2" /><p className='info-p'>Please log in to view the facility counts for each sport.</p></div>
+                  : <div className='info-div'><div className='whole-info-div d-flex'><i class="bi bi-info-circle fs-2" /><p className='info-p'>Please log in to view the facility counts for each sport.</p></div></div>
                 }
               </div>
             </div>
@@ -272,7 +276,7 @@ function App() {
                 <i class="bi bi-apple ms-3 fs-5"></i>
               </div>
               <div className='line-separator'>
-              <span className='line ms-2'>______________________________________________________________________________________________________________________________________________________________________________</span>
+                <span className='line ms-2'>______________________________________________________________________________________________________________________________________________________________________________</span>
               </div>
               <div className='footer-bottom'>
                 <p>We Play Real <i class="bi bi-c-square"></i> 2020. All Rights Reserved</p>

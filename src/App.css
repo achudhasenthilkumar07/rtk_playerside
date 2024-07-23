@@ -286,6 +286,7 @@
 
 .info-div{
   background-color: #fab4b4;
+  text-align: center;
   border-radius: 5px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -304,7 +305,7 @@
 .info-p{
   margin-top: 10px;
   margin-bottom: 13px;
-  margin-left: 10px;
+  margin-left: 8px;
   text-align: center;
   font-weight: bolder;
   font-size: large;
@@ -313,7 +314,6 @@
 
 
 .bi.bi-info-circle{
-  margin-left: 250px;
   color: #b12223;
 }
 
@@ -370,4 +370,16 @@
 
 .footer-bottom {
   margin-top: 1rem;
+}
+
+.whole-info-div{
+  display: flex; /* Enable flexbox */
+  flex-direction: row; /* Align children in a row */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 10px;
+}
+
+.info-p{
+  margin: 0;
 }
